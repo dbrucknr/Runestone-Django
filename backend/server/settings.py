@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'api.apps.ApiConfig',
     'assignments.apps.AssignmentsConfig',
     'books.apps.BooksConfig',
+    'courses.apps.CoursesConfig',
 
     # Third-Party Applications
     'rest_framework',

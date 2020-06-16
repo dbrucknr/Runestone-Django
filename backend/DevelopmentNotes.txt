@@ -1,11 +1,23 @@
+Note:
 database -s psycopg2-binary (Will need to update)
+
+Adding Apps to project
+docker-compose exec web python manage.py startapp <name>
 
 Tests:
 docker-compose exec web python manage.py test
 
-Database Migrations
+Database Migrations (Examples):
 docker-compose exec web python manage.py makemigrations assignments
 docker-compose exec web python manage.py migrate
 
 docker-compose exec web python manage.py makemigrations books
 docker-compose exec web python manage.py migrate
+
+3rd Party Installs
+docker-compose exec web pipenv install djangorestframework
+docker-compose exec web pipenv install drf_yasg
+docker-compose exec web pipenv install django-cors-headers
+docker-compose exec web pipenv install django-allauth
+docker-compose exec web pipenv install django-crispy-forms
+docker-compose exec web pipenv install dj_rest_auth
