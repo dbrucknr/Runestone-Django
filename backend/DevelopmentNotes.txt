@@ -1,0 +1,4 @@
+database -s psycopg2-binary (Will need to update)
+
+Tests:
+docker-compose exec web python manage.py test
