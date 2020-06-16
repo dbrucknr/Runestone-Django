@@ -8,6 +8,12 @@ verify_ssl = true
 [packages]
 django = "*"
 psycopg2-binary = "*"
+djangorestframework = "*"
+drf-yasg = "*"
+django-cors-headers = "*"
+django-allauth = "*"
+django-crispy-forms = "*"
+dj-rest-auth = "*"
 
 [requires]
 python_version = "3.8"

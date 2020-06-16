@@ -2,3 +2,10 @@ database -s psycopg2-binary (Will need to update)
 
 Tests:
 docker-compose exec web python manage.py test
+
+Database Migrations
+docker-compose exec web python manage.py makemigrations assignments
+docker-compose exec web python manage.py migrate
+
+docker-compose exec web python manage.py makemigrations books
+docker-compose exec web python manage.py migrate
